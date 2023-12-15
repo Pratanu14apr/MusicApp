@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#body {
+  background-color: #fff;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+}
+#mySection {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+}
+#myArticle {
+  height: 85vh;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+}
+#mySection #myArticle .left {
+  display: flex;
+  flex-basis: 17.5%;
+  height: 85vh;
+  background-color: #000;
+  flex-direction: column;
+  padding: 15px;
+  gap: 30px;
+}
+#mySection #myArticle .right {
+  flex-basis: 82.5%;
+  height: 85vh;
+  background-color: #121212;
+}
+#mySection .footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mySection #myArticle .left .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: #000;
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+}
+
+#mySection #myArticle .left .listU {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100px;
+  list-style: none;
+  background-color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(167, 162, 162);
+  padding: 10px;
+  gap: 15px;
+  text-transform: capitalize;
+}
+#mySection #myArticle .left .listU .first {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#mySection #myArticle .left .listD {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 65px;
+  list-style: none;
+  background-color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(167, 162, 162);
+  padding: 10px;
+  gap: 15px;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgb(161, 157, 157);
+}
+
+#mySection #myArticle .left .listD .second {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+#mySection #myArticle .left .listD .second #plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  background-color: rgb(175, 175, 175);
+  color: rgb(82, 81, 81);
+}
+#mySection #myArticle .left .listD .second #love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  background-color: rgb(140, 112, 231);
+}
+
+#mySection #myArticle .left .install {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  background-color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(167, 162, 162);
+  padding: 10px;
+  gap: 10px;
+  text-transform: capitalize;
+  position: relative;
+  top: 160px;
+}
+
+#mySection #myArticle .right .navBar {
+  height: 60px;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 47px;
+}
+#mySection #myArticle .right .navBar .direction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 8%;
+  background-color: #121212;
+}
+#mySection #myArticle .right .navBar .direction .Than {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  color: white;
+  border-radius: 100%;
+}
+
+#mySection #myArticle .right .navBar .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #121212;
+  height: 40px;
+  width: 30%;
+  padding: 5px;
+}
+#mySection #myArticle .right .navBar .menu .premium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 45%;
+  background-color: #121212;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid rgb(177, 174, 174);
+  color: white;
+}
+#mySection #myArticle .right .navBar .menu .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  width: 50%;
+  background-color: #000;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+}
+#mySection #myArticle .right .navBar .menu .profile .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  border-radius: 100%;
+  font-size: 12px;
+}
+#mySection #myArticle .right .navBar .menu .profile p {
+  font-size: 13px;
+  font-weight: bold;
+}
+#mySection #myArticle .right .navBar .menu .profile .drop {
+  padding-right: 5px;
+}
+#mySection #myArticle .right .mainB {
+  display: flex;
+  background-color: #121212;
+  height: 470px;
+  width: 100%;
+  padding: 10px 0px 0px 45px;
+  background-color: green;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+  margin: 2px;
+  background-color: red;
+}
+
+#image1 {
+  height: 200px;
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.name {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 22px;
+  border-bottom: 0.2px solid rgb(254, 213, 213);
+  cursor: pointer;
+}
+
+/* #div {
+  background-color: #121212;
+  display: grid;
+  grid-template-rows: 250px 250px 250px;
+  grid-template-columns: 260px 260px 260px 260px;
+  overflow: scroll;
+  background-color: #f53192;
+} */
+.audioList{
+   padding: 30px;
+  margin-bottom:20vh ;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px;
+  row-gap: 60px;
+  column-gap: 60px;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#audio {
+  height: 30px;
+  width: 200px;
+}
+
+#audioPara {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+#mySection .footer {
+  padding: 20px;
+  gap: 10px;
+  border-top: 0.5px solid rgb(179, 179, 179);
+}
+
+#mySection .footer .description {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+  flex-basis: 30%;
+  background-color: #121212;
+  gap: 10px;
+}
+
+#mySection .footer #playerDiv {
+  height: 70px;
+  flex-basis: 45%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#mySection .footer .tools {
+  height: 70px;
+  flex-basis: 20%;
+}
+#mainPlayer {
+  height: 40px;
+  width: 350px;
+}
+
+#mySection .footer .description #smallImg {
+  height: 50px;
+  width: 50px;
+}
+#mySection .footer .description #detailsSong {
+  flex-basis: 40%;
+}
+#mySection .footer .description #songName {
+  color: rgb(231, 226, 226);
+}
+#mySection .footer .description #artist {
+  color: rgb(224, 221, 221);
+}
+#mySection .footer .description #songIcon {
+  flex-basis: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(167, 162, 162);
+}
+
+#mySection .footer .tools {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 20px;
+  gap: 15px;
+}
+#mySection .footer .tools svg {
+  fill: rgb(167, 162, 162);
+}
+#mainBlock {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+.musicContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.musicPlayer {
+  background: lightpink;
+  width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+}
+.playerIcon {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.playerIcon .circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  color: #f53192;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+.songPicture {
+  width: 220px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0px 10px 60px rgba(255, 26, 26, 0.22);
+}
+.musicPlayer h1 {
+  font-size: 20px;
+  font-weight: 400px;
+  color: #333;
+  margin-top: 20px;
+}
+.musicPlayer p {
+  font-size: 14px;
+  column-rule-color: #333;
+}
